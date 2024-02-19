@@ -20,7 +20,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header hide">
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo" href="./index.html"
@@ -54,14 +54,14 @@
         </address>
       </div>
     </header>
-    <main>
+    <main class="">
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>Order Service</button>
         </div>
       </section>
-      <section class="main-section">
+      <section class="main-section hide">
         <div class="container">
           <h2 class="visually-hidden"></h2>
           <ul class="main-section-list">
@@ -116,7 +116,7 @@
           </ul>
         </div>
       </section>
-      <section class="team-section">
+      <section class="team-section hide">
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="main-team-section-list">
@@ -291,7 +291,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio-section">
+      <section class="portfolio-section hide">
         <div class="container">
           <h2 class="title">Our Portfolio</h2>
           <ul class="main-portfolio-section-list">
@@ -416,7 +416,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-page">
+    <footer class="footer-page hide">
       <div class="container-footer container">
         <div class="container-logo">
           <a href="./index.html" class="logo-footer"
@@ -480,9 +480,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop in-open">
+    <div class="backdrop is-open hide" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -558,5 +558,11 @@
         </form>
       </div>
     </div>
+
+
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

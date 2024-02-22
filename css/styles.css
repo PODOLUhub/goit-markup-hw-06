@@ -1,6 +1,4 @@
-.hide {
-  display: none;
-}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -36,6 +34,9 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.hide {
+  display: none;
 }
 .container{
   width: 320px;
